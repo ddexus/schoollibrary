@@ -1,0 +1,314 @@
+/* Общие настройки */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Настройки хедера */
+.header {
+    width: 100%;
+    height: 250px; /* Увеличенная высота хедера */
+    background-color: #e0985c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 50px; /* Новое значение высоты кнопок */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.mover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.current {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Основное содержимое */
+.structure {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: calc(100% - 120px);
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Уменьшение отступа от кнопки поиска */
+.search button {
+    height: 40px;
+    padding: 10px 15px; /* Уменьшаем отступ справа и слева */
+    border-radius: 5px;
+    background-color: #df6d72;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Уменьшаем отступ слева */
+}
+
+.search button:hover {
+    background-color: #992f34;
+}
+
+#main-picture {
+    width: 75%;
+    height: 350px;
+    background-image: url('/pictures/primaryschool.png'); /* Не забудьте заменить путь к файлу */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.class {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Гибкий layout */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.picture {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.buy {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    background-color: #eaeaea;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buy:hover {
+    background-color: #cccccc;
+}
+
+/* Футер */
+.footer {
+    background-color: #313131;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Прописываем фоны изображений для каждого класса учебника */
+
+#num4 {
+    background-image: url('../pictures/books/class1_rus.jpg');
+}
+
+#num5 {
+    background-image: url('../pictures/books/class1_azbuka.jpg');
+}
+
+#num6 {
+    background-image: url('../pictures/books/class1_mat.jpg');
+}
+
+#num7 {
+    background-image: url('../pictures/books/class1_litcht.jpg');
+}
+
+#num8 {
+    background-image: url('../pictures/books/class2_rus.webp');
+}
+
+#num9 {
+    background-image: url('../pictures/books/class2_mat.webp');
+}
+
+#num10 {
+    background-image: url('../pictures/books/class2_orkmir.webp');
+}
+
+#num11 {
+    background-image: url('../pictures/books/class2_lit.webp');
+}
+
+#num12 {
+    background-image: url('../pictures/books/class3_rus.webp');
+}
+
+#num13 {
+    background-image: url('../pictures/books/class3_mat.webp');
+}
+
+#num14 {
+    background-image: url('../pictures/books/class3_okrmir.jpg');
+}
+
+#num15 {
+    background-image: url('../pictures/books/class3_lit.webp');
+}
+
+#num16 {
+    background-image: url('../pictures/books/class4_rus.webp');
+}
+
+#num17 {
+    background-image: url('../pictures/books/class4_mat.webp');
+}
+
+#num18 {
+    background-image: url('../pictures/books/class4_okrmir.jpg');
+}
+
+#num19 {
+    background-image: url('../pictures/books/class4_lit.webp');
+}
+
+/* Мобильные стили */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .link {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .search input {
+        width: calc(100% - 100px);
+    }
+
+    .search button {
+        padding: 10px 15px;
+ }
+
+    .class {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .book {
+        width: 200px;
+    }
+
+    .picture {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .search input {
+        width: calc(100% - 80px);
+    }
+
+    .search button {
+        padding: 5px 10px;
+    }
+
+    .class {
+        margin-left: 10%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .book {
+        width: 150px;
+    }
+
+    .picture {
+        height: 100px;
+    }
+}
