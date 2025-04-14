@@ -1,0 +1,137 @@
+/* Основной стиль */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Настройки хедера */
+.header {
+    width: 100%;
+    height: 250px; /* Увеличенная высота хедера */
+    background-color: #e0985c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links-container {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 50px; /* Новое значение высоты кнопок */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mover {
+    text-decoration: none;
+    color: inherit;
+    color: inherit;
+}
+
+.structure {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text {
+    max-width: 800px; /* Ограничивает ширину текста, предотвращая растяжение */
+    font-size: 18px;
+    line-height: 1.6em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #313131;
+    color: #fff;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Адаптивность для мобильного экрана */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .info-block {
+        margin-bottom: 30px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+/* Экстремально маленькое разрешение */
+@media only screen and (max-width: 480px) {
+    .header {
+        height: 50px;
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .mover {
+        padding: 0px;
+        font-size: 14px;
+    }
+
+    .link {
+        width: 33%;
+        padding: 0;
+    }
+
+    .info-block {
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
