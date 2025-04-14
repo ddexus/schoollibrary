@@ -113,7 +113,6 @@ body {
 }
 
 #main-picture {
-    display: none;
     width: 75%;
     height: 0px;
     background-image: url('/pictures/primaryschool.png'); /* Не забудьте заменить путь к файлу */
